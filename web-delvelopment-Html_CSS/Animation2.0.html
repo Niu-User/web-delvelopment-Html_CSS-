@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 200px;
+            background-color: black;
+            position: relative;/*allows to move its original position*/
+            
+            animation: move 5s infinite;/*name,duration,repetation*/
+        }
+        @keyframes move{
+            0%{/*0 sec*/
+                background-color: antiquewhite;
+                 bottom:400px;
+                 /*start moving*/
+            }
+            50%{/*1 sec*/
+                background-color: blue;
+                border-radius: 40%;
+                
+                bottom:90% ;
+                transform:rotate(360deg);
+                background-image: url(ima1.jpeg);
+            }
+            100%{
+                
+                background-image: url(image.png);
+                
+                top:100;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

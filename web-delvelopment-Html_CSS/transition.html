@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Transition</title>
+<style>
+     .b1{
+        border: 5px  green;
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            position: absolute;
+            top: 150px;
+            left: 150px;
+            padding: 2px;}
+
+            .b1:hover{
+                /* for brightness we are using filter property */
+
+                filter: brightness(.28);
+            border-radius: 45%;
+            border: 20px double white;
+            background-image: url(image.png);
+            background-size: cover;
+            transform: scale(1.6) rotateX(360deg);
+            transition: all 3s ease-in-out; /* here s is duration*/
+            transition-delay: 1s;
+             /* transition -property .all ; filter ,etc */
+          /* transition -behaviour ease in , etc */
+           /* short hand ->  transition  ->  all 2s ease - in  :  */
+           
+
+            cursor: pointer;
+        }
+</style>
+
+
+
+</head>
+<body>
+    <button class="b1" type="reset"> Click</button>
+
+    
+</body>
+</html>

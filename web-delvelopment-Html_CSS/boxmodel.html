@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Boxmodel.html</title>
+
+    <style>
+        body{
+            background-image:url(ima1.jpeg);
+           background-size: cover;
+        }
+       div{
+        /* border: 10px solid black; <- short hand*/
+        border:20px red;
+        height: 400px;
+        width: 300px;
+        border-width: 10px;
+        border-style: double ;/* solid,dotted,dashed,dotted*/
+        border-radius: 30px; /* circle =50% */
+        
+       } 
+       #div1
+       {
+        border:10px red;
+        height: 200px;
+        width: 200px;
+        border-width: 5px;
+        border-style: solid;
+
+        border-radius: 50%;
+        /* padding = dist btn border and actual content*/
+        padding:50px ;
+        margin: 30px;
+        box-sizing:content-box;
+        height: 40px;
+        width: 80px;
+
+
+        background-image: url(ima1.jpeg);
+        background-size: cover;
+
+
+       }
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <!-- center tag + div tag is used  
+     div-> create box-->
+  <center>  <div><div id="div1">HELLO
+    
+  </div></div></center>
+    <span>hello Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, totam laudantium neque enim sint magni ipsam similique reprehenderit temporibus eaque quo aliquid accusantium quibusdam ducimus exercitationem illo placeat non eveniet!
+    Omnis, quaerat quisquam. Totam, optio. Voluptatem mollitia harum, eius officiis repudiandae sequi inventore amet quaerat at laboriosam vel eveniet blanditiis, aperiam enim suscipit esse dignissimos? Corrupti numquam odit illum eligendi!</span>
+
+
+
+
+</body>
+</html>
